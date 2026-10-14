@@ -43,41 +43,42 @@ export default function Navbar({
     }
   }, [])
   return (
-    <header className="header" ref={header}>
+    <header className="header" ref={header}onMouseLeave={() => setMenu(null)}>
       <a href="#" className="brand" aria-label="NexGen home">
-        <img src="/assets/nexgen-logo-clean.png" alt="NexGen" />
+        <img src="/assets/nexgen-logo-clean-2.png" alt="NexGen" />
       </a>
       <nav
         className={mobile ? "nav mobile-open" : "nav"}
         aria-label="Main navigation"
       >
-        {Object.keys(navigation).map((item) => (
-          <button
-            className={menu === item ? "nav-item active" : "nav-item"}
-            key={item}
-            aria-expanded={menu === item}
-            aria-controls={menu === item ? "navigation-submenu" : undefined}
-            onClick={() => {
-              setMenu(menu === item ? null : item)
-            }}
-            onKeyDown={(event) => {
-              if (event.key === "ArrowDown") {
-                event.preventDefault()
-                setMenu(item)
-                requestAnimationFrame(() =>
-                  document
-                    .querySelector<HTMLButtonElement>(
-                      ".mega-menu:not([inert]) .mega-links button",
-                    )
-                    ?.focus(),
-                )
-              }
-            }}
-          >
-            {item}
-            <Icon name="chevron" />
-          </button>
-        ))}
+
+      {Object.keys(navigation).map((item) => (
+        <button
+          className={menu === item ? "nav-item active" : "nav-item"}
+          key={item}
+          aria-expanded={menu === item}
+          aria-controls={menu === item ? "navigation-submenu" : undefined}
+          onMouseEnter={() => setMenu(item)}
+          onFocus={() => setMenu(item)}
+          onClick={() => setMenu(item)}
+          onKeyDown={(event) => {
+            if (event.key === "ArrowDown") {
+              event.preventDefault()
+              setMenu(item)
+              requestAnimationFrame(() =>
+                document
+                  .querySelector<HTMLButtonElement>(
+                    ".mega-menu:not([inert]) .mega-links button",
+                  )
+                  ?.focus(),
+              )
+            }
+          }}
+        >
+          {item}
+        </button>
+      ))}
+
       </nav>
       <div className="nav-actions">
         <ThemeToggle />

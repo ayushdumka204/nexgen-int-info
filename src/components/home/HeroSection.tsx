@@ -25,8 +25,6 @@ export default function HeroSection({
     >
       <motion.div className="hero-copy" {...reveal(reduced)}>
         <div className="eyebrow hero-eyebrow">
-          <span className="little-line" />
-          HUMAN UNDERSTANDING. BUSINESS CLARITY.
         </div>
         <h1>
           Research That Turns

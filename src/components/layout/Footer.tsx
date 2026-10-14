@@ -7,7 +7,7 @@ export default function Footer({ navigate }: { navigate: Navigate }) {
         <div className="footer-main">
           <div className="footer-brand">
             <div className="footer-logo">
-              <img src="/assets/nexgen-logo-clean.png" alt="NexGen" />
+              <img src="/assets/nexgen-logo-clean-2.png" alt="NexGen" />
             </div>
             <h3>
               Human understanding.
