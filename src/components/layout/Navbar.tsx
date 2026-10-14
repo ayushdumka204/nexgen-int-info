@@ -44,8 +44,8 @@ export default function Navbar({
   }, [])
   return (
     <header className="header" ref={header}onMouseLeave={() => setMenu(null)}>
-      <a href="#" className="brand" aria-label="NexGen home">
-        <img src="/assets/nexgen-logo-clean-2.png" alt="NexGen" />
+      <a href="#" className="brand" aria-label="NexGen Int home">
+        <img src="/assets/nexgen-logo-clean-2.png" alt="NexGen Int logo" />
       </a>
       <nav
         className={mobile ? "nav mobile-open" : "nav"}

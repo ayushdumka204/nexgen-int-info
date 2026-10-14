@@ -1,7 +1,14 @@
 {
-  "description": "This platform offers comprehensive market research services, transforming human insights into strategic business advantages through user-friendly navigation and engaging content.",
+  "title": "NexGen Int",
+  "description": "NexGen Int helps teams uncover clear market insights, sharper strategies, and better customer decisions through research-driven intelligence.",
   "robots": {
-    "index": false
+    "index": true
+  },
+  "icons": {
+    "icon": "/favicon.svg"
+  },
+  "openGraph": {
+    "image": "/assets/social-development.jpg"
   },
   "accessibility": {
     "addBypassLinks": false,
