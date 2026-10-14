@@ -164,7 +164,7 @@ h2, .methodologies-intro h2, .closing h2 {
 .brand img { filter: var(--brand-treatment); }
 .footer-logo {
   display: block;
-  width: 180px;
+  width: 130px;
   height: auto;
   object-fit: contain;
   background: transparent;
@@ -335,8 +335,8 @@ h2, .methodologies-intro h2, .closing h2 {
 .footer-brand h3 span { color: var(--footer-accent); font-family: var(--font-display); font-size: inherit; font-style: italic; font-weight: 400; }
 .footer-brand p { color: var(--footer-muted); }
 .footer-cta { color: var(--footer-accent); border-color: var(--footer-accent); }
-.footer-column h4 { color: var(--footer-accent); font-size: 0.6875rem; }
-.footer-column button { color: var(--footer-muted); font-size: 0.75rem; min-height: 24px; }
+.footer-column h4 { color: var(--footer-accent); font-size: 0.80rem; }
+.footer-column button { color: var(--footer-muted); font-size: 0.78rem; min-height: 24px; }
 .footer-column button:hover { color: var(--footer-ink); }
 .footer-contact { color: var(--footer-ink); font-size: 0.75rem; }
 .brand-journey { border-color: var(--footer-line); }
